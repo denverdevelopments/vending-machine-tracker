@@ -1,0 +1,5 @@
+<h1>Snack Index</h1>
+
+<br/><% @snacks.each do |snack| %>
+<p>* <%= link_to snack.label, "snacks/#{snack.id}" %></p><br/>
+<% end %>

@@ -1,0 +1,6 @@
+<h2>* <%= @snack.label %>  <%= "cost(s)  (#{number_to_currency(@snack.price)})" %></h2><br/>
+
+<p>Locations</p>
+<br/><% @machines.each do |machine| %>
+<p>* <%= machine.location %>  (<%=machine.count_jakes_face %> kinds, avg of <%= number_to_currency(machine.average_price) %>)</p><br/>
+<% end %>
